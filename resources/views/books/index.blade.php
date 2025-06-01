@@ -358,7 +358,7 @@
             <h3>Keranjang Belanja</h3>
             <ul id="cartItemsList">
             </ul>
-            <div><strong>Total: </strong><span id="cartTotal">Rp 0</span></div>
+            <div><strong>Total: </strong><span id="cartTotal">Rp 0</span></div><br>
             <form action="{{ route('checkout') }}" id="orderfrom" method="post">
                 @csrf
                 <input type="hidden" name="cart" id="cart">
