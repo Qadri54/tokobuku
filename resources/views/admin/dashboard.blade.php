@@ -46,7 +46,7 @@
             data: {
                 labels: merged.map(book => book.judul),
                 datasets: [{
-                    label: 'total pembelian',
+                    label: 'total penjualan',
                     data: merged.map(book => book.qty),
                     backgroundColor: 'rgba(13, 110, 253, 0.7)', // bootstrap primary color
                     borderColor: 'rgba(13, 110, 253, 1)',
