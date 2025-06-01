@@ -1,0 +1,27 @@
+<!-- notifikasi jike pembelian berhasil -->
+    @if (session('success'))
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ session('success') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
+
+
+//checkout
+ <form action="{{ route('checkout') }}" id="orderfrom" method="post">
+                @csrf
+                <input type="hidden" name="cart" id="cart">
+                <button id="checkoutBtn" type="submit">Checkout</button>
+            </form>
+
+
+const orderfrom = document.getElementById('orderfrom');
+        // Checkout
+        orderfrom.addEventListener('submit', (e) => {
+            const confirmation = confirm('Yakin ingin checkout?');
+
+            if (!confirmation) {
+                e.preventDefault();
+            }
+            document.getElementById('cart').value = JSON.stringify(cart);
+        });
