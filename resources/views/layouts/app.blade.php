@@ -137,7 +137,7 @@
                     <nav>
                         <a href="{{ route('books.index') }}">Beranda</a>
                         <a href="https://wa.me/081360765971" target="_blank" rel="noopener noreferrer">Kontak</a>
-                        <a href="" target="_blank" rel="noopener noreferrer">Feedback</a>
+                        <a href="https://feedback.qadristore.my.id/feedback" target="_blank" rel="noopener noreferrer">Feedback</a>
                     </nav>
                 @endif
             </div>
