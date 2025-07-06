@@ -63,6 +63,16 @@ Aplikasi berbasis web yang memungkinkan pelanggan untuk **melihat, memilih, memb
 
 ---
 
+## 🌐 Website
+
+Kunjungi aplikasi toko buku online di:  
+
+customer: https://tokobuku.qadristore.my.id
+
+admin: https://tokobuku.qadristore.my.id/admin/login
+email admin: admin@example.com
+Pw: password123
+
 ## 📦 Instalasi Aplikasi Toko Buku Laravel
 
 Pastikan sudah terpasang: PHP ≥ 8.0, Composer,MySQL/MariaDB, Git.
@@ -71,7 +81,7 @@ Pastikan sudah terpasang: PHP ≥ 8.0, Composer,MySQL/MariaDB, Git.
 
 ```bash
 # 1. Clone repositori
-git clone https://github.com/namakamu/bookstore-app.git
+git clone https://github.com/Qadri54/tokobuku.git
 cd bookstore-app
 
 # 2. Install dependency backend Laravel
@@ -95,9 +105,8 @@ php artisan key:generate
 # DB_USERNAME=root
 # DB_PASSWORD=
 
-# 8. Jalankan migrasi & seed data (opsional)
+# 8. Jalankan migrasi & seed data
 php artisan migrate --seed
 
 # 9. Jalankan server lokal Laravel
 php artisan serve
-
